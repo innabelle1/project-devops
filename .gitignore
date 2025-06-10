@@ -1,0 +1,71 @@
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- Terraform ---
+*.tfstate
+*.tfstate.*
+.terraform/
+crash.log
+override.tf
+override.tf.json
+terraform.tfvars
+*.backup
+*.tfstate.backup
+
+# --- Ansible ---
+*.retry
+*.log
+*.vault
+inventory.ini
+
+# --- Helm ---
+*.tgz
+charts/
+helm-release.yaml
+
+# --- Kubernetes ---
+kubeconfig
+*.kubeconfig
+*.kube.yml
+
+# --- Docker ---
+*.pid
+*.sock
+
+# --- Jenkins ---
+secrets/
+init.groovy.d/
+jobs/
+workspace/
+*.jenkinsfile.bak
+
+# --- AWS ---
+.aws/
+.env
+.env.*
+
+# --- Node / Maven / Java ---
+node_modules/
+target/
+build/
+.idea/
+*.iml
+
+# --- VSCode / JetBrains ---
+.vscode/
+*.code-workspace
+.idea/
+*.ipr
+*.iws
+
+# --- Logs and temporary files ---
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+
+# --- Git Submodules (optional if app/ is a submodule) ---
+app/project-devops/.git
